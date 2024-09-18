@@ -144,7 +144,7 @@ export default function Home() {
             Powered by AI Magic
           </h3>
           <p className="text-xl text-amber-800 mb-8">
-            Lumen Docs leverages OpenAI's GPT model to generate intelligent and
+            Lumen Docs leverages OpenAI&apos;s GPT model to generate intelligent and
             context-aware documentation.
           </p>
           <Zap className="h-16 w-16 mx-auto text-amber-600" />
