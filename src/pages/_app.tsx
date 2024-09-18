@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:description" content="Generate, manage, and deploy beautiful API documentation from OpenAPI specifications using AI magic with Lumen Docs." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://lumen-docs.vercel.app" />
-        <meta property="og:image" content="https://lumen-docs.vercel.app/preview.png" />
+        <meta property="og:image" content="/preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@emmanuel_haanks" />
       </Head>
