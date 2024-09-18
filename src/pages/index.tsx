@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-  Sun,
   Terminal,
   FileText,
   Zap,
@@ -11,7 +10,9 @@ import {
   Linkedin,
 } from "lucide-react";
 
-export default function Component() {
+import Image from "next/image";
+
+export default function Home() {
   const [activeCommand, setActiveCommand] = useState("init");
 
   const commands = {
@@ -25,7 +26,7 @@ export default function Component() {
       description: "Generate API documentation",
       usage: "npx lumen-docs generate",
       explanation:
-        "This command reads your OpenAPI specification and uses AI to generate comprehensive, readable Markdown documentation. The generated docs will be placed in the 'lumen-gen' directory.",
+        "This command reads your OpenAPI specification and uses AI to generate comprehensive, readable Markdown documentation. The generated docs will be placed in the lumen-gen directory.",
     },
     deploy: {
       description: "Deploy your documentation",
@@ -117,7 +118,7 @@ export default function Component() {
               Initialize
             </h3>
             <p className="text-amber-800">
-              Start your documentation journey with 'npx lumen-docs init'. Set
+              Start your documentation journey with <span className="bg-amber-200 px-1 rounded">npx lumen-docs init</span>. Set
               up your project in seconds.
             </p>
           </div>
@@ -125,15 +126,14 @@ export default function Component() {
             <FileText className="h-12 w-12 mb-4 text-amber-700" />
             <h3 className="text-xl font-bold mb-2 text-amber-900">Generate</h3>
             <p className="text-amber-800">
-              Convert your OpenAPI specs into readable Markdown docs with 'npx
-              lumen-docs generate'.
+              Convert your OpenAPI specs into readable Markdown docs with <span className="bg-amber-200 px-1 rounded">npx lumen-docs generate</span>.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
             <Cloud className="h-12 w-12 mb-4 text-amber-700" />
             <h3 className="text-xl font-bold mb-2 text-amber-900">Deploy</h3>
             <p className="text-amber-800">
-              Share your docs with the world using 'npx lumen-docs deploy'. One
+              Share your docs using <span className="bg-amber-200 px-1 rounded">npx lumen-docs deploy</span>. One
               command, instant publication.
             </p>
           </div>
@@ -152,9 +152,11 @@ export default function Component() {
 
         <section className="flex justify-center mb-16">
           <div className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center space-y-4 max-w-sm">
-            <img
+            <Image
               src="https://github.com/emmanuel39hanks.png"
               alt="Emmanuel Haankwenda"
+              width={96}
+              height={96}
               className="w-24 h-24 rounded-full border-4 border-amber-400"
             />
             <div className="text-center">
