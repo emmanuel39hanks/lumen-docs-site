@@ -56,12 +56,12 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="flex-grow container mx-auto px-6 py-8">
         <section className="text-center py-12 bg-gradient-to-b from-amber-200 to-amber-50 rounded-3xl">
-          <h2 className="text-5xl font-extrabold mb-6 text-amber-900 leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-extrabold mb-4 sm:mb-6 text-amber-900 leading-tight">
             Illuminate Your API Documentation
           </h2>
-          <p className="text-2xl text-amber-800 mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-2xl text-amber-800 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Generate, manage, and deploy beautiful API docs from OpenAPI specs
             using AI magic!
           </p>
